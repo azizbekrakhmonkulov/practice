@@ -6,3 +6,6 @@ print(message)
 
 first = "Men python o'rganishni boshladim!"
 print(first)
+
+norman = "MIT43 B group lider"
+print(norman)
