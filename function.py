@@ -43,3 +43,17 @@ print("result3:", result3)
 
 result4 = give_greet(name="Max")
 print("result4:", result4)
+
+
+print("======Scope=======")
+b = 100
+
+
+# DEFINE
+def calculate(a, b):
+    c = a * b
+    print(f"The c value:", c)
+
+
+# CALL
+calculate(5, 35)
