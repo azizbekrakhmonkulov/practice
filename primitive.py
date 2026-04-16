@@ -11,6 +11,7 @@ result = count.bit_count()  # method
 result1 = count.numerator  # state
 print(result, result1)
 
+
 print("===== string =====")
 # Methods: upper(), lower(), title(), find(), replace()
 
@@ -27,3 +28,22 @@ print(f"The result (3); {result}")
 result = course.replace("FillStack", "MasterClass")
 print(f"The result (4); {result}")
 print(course)
+
+
+print("===== boolean =====")
+# functions > type() input() bool() int() str()
+
+y = input("Give your value for y:")
+print("y:", y)
+
+result = y.isnumeric()
+print(f"The input value is numeric: {result}")
+
+# TRUTHY vs FALSY value
+# TRUSHY: True 100 -100 "MIT"
+
+test_falsy = "" or False or None or 0
+print("test falsy:", bool(test_falsy))
+
+test_truthy = "" "MIT"
+print("test truthy:", bool(test_truthy))
