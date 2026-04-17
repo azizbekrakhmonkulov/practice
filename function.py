@@ -46,12 +46,12 @@ print("result4:", result4)
 
 
 print("======Scope=======")
-b = 100
+b = 100  # 3
 
 
 # DEFINE
-def calculate(a, b):
-    c = a * b
+def calculate(a, b):  # 2
+    c = a * b  # 1
     print(f"The c value:", c)
 
 
