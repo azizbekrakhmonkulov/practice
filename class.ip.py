@@ -37,6 +37,9 @@ class Dog(Animal):
     def protect(self):
         print("Yes I can protect you!")
 
+    def make_voice(self):
+        print(f"The {self.name} can make voice: {self.sound}")
+
 
 class Cat(Animal):
     # constractor
@@ -86,3 +89,29 @@ print(Dog.description)
 
 print(dog.voice, fish.voice)
 print("dog status:", dog.status)
+
+
+print("=====Polimorphism======")
+
+dog.make_voice()
+fish.make_voice()
+
+print("------")
+# fish > Fish > Animal > object
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+d = isinstance("MIT", object)
+
+result = a and b and c and d
+
+print(f"The result: {result}")
+# print(f"The result: {b}")
+# print(f"The result: {c}")
+# print(f"The result: {d}")
+
+# Fish > Animal > object
+data1 = issubclass(Fish, Animal)
+data2 = issubclass(Animal, object)
+
+print("the result:", data1, data2)
