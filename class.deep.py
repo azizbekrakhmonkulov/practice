@@ -63,6 +63,7 @@ try:
 except Exception as err:
     print("No target state found:", err)
 
+# GETTER VS SETTER
 # account_owner = my_account.holder
 print("before account_owner:", my_account.holder)
 
