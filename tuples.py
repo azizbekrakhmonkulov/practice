@@ -83,3 +83,13 @@ def greeting(*args, **kwargs):
 
 # CALL
 greeting("hi", True, 10, name="John", age=23)
+
+
+print("======ZIP=====")
+tuple1 = (1, 2, 5, 9)
+tuple2 = ('a', 'd', 'c')
+
+zipped = zip(tuple1, tuple2)
+print("zipped:", zipped)
+result = list(zipped)
+print(f"the reruslt: {result}")
