@@ -1,21 +1,45 @@
-//TASK-C
+// TASK - D
+
+// ❓ Shunday function tuzingki unga integerlardan iborat array pass bolsin
+// va function bizga osha arrayning eng katta qiymatiga tegishli 
+// birinchi indexni qaytarsin.
+
+// ✅ Masalaning yechimi:
+function getArray(arr) {
+    let katta = arr[0]
+    let kattaIndex = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > katta) {
+            katta = arr[i]
+            kattaIndex = i
+        }
+    }
+
+    return kattaIndex
+}
+
+console.log(getArray([5, 11, 7, 24, 18]));
+
+
+
+// TASK-C
 
 // ❓ Shunday function tuzing, u 2ta string parametr ega bolsin,
 //hamda agar har ikkala string bir hil harflardan iborat bolsa true
 //aks holda false qaytarsin
 
-// ✅ Masalaning yechimi:
-function sameLetters(a, b) {
-    let sort1 = a.split("").sort().join("");
-    let sort2 = b.split("").sort().join("");
+// // ✅ Masalaning yechimi:
+// function sameLetters(a, b) {
+//     let sort1 = a.split("").sort().join("");
+//     let sort2 = b.split("").sort().join("");
 
 
-    return sort1 === sort2;
+//     return sort1 === sort2;
 
 
-}
-result = sameLetters("night", "thing");
-console.log(result);
+// }
+// result = sameLetters("night", "thing");
+// console.log(result);
 
 
 // TASK-B
