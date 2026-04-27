@@ -1,24 +1,41 @@
+// TASK - E
+
+// ❓ Shunday function tuzing, u bitta string argumentni qabul qilib 
+// osha stringni teskari qilib return qilsin.
+
+
+// ✅ Masalaning yechimi:
+function getReverse(str) {
+    let result = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        result += str[i];
+    }
+    return result;
+}
+
+console.log(getReverse("NodeJS"));
+
 // TASK - D
 
 // ❓ Shunday function tuzingki unga integerlardan iborat array pass bolsin
 // va function bizga osha arrayning eng katta qiymatiga tegishli 
 // birinchi indexni qaytarsin.
 
-// ✅ Masalaning yechimi:
-function getArray(arr) {
-    let katta = arr[0]
-    let kattaIndex = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > katta) {
-            katta = arr[i]
-            kattaIndex = i
-        }
-    }
+// // ✅ Masalaning yechimi:
+// function getArray(arr) {
+//     let katta = arr[0]
+//     let kattaIndex = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > katta) {
+//             katta = arr[i]
+//             kattaIndex = i
+//         }
+//     }
 
-    return kattaIndex
-}
+//     return kattaIndex
+// }
 
-console.log(getArray([5, 11, 7, 24, 18]));
+// console.log(getArray([5, 11, 7, 24, 18]));
 
 
 
