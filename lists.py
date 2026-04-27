@@ -114,3 +114,45 @@ print("people(1)", people)
 # sort by age via lambda
 people.sort(key=lambda person: person[1])
 print("person(2)", people)
+
+
+print("=====enumerate, map and filter======")
+
+animals = ["dog", "cat", "fish"]
+for element in enumerate(animals):
+    print("element:", element)
+
+for (index, value) in enumerate(animals):
+    print(f"index: {index} and value: {value}")
+
+print("-------")
+
+car_obj = dict(brand="Ferrari", years=2025)
+result = car_obj.items()
+for (key, value) in result:
+    print(f"index: {key} and value: {value}")
+
+print("-------")
+# map
+cars = [
+    ("Ferrari", 78),
+    ("Tayota", 87),
+    ("Audi", 116),
+    ("BMW", 109)
+]
+
+new_cars = []
+for car in cars:
+    new_cars.append(car[0])
+    print("new_car:", new_cars)
+
+result1 = map(lambda car: car[0], cars)
+print(f"the result: {result1} and type: {type(result1)}")
+new_cars = list(result1)
+print("new_cars(1)", new_cars)
+
+print("-------")
+# filter
+result_filter = filter(lambda car: car[1] > 80, cars)
+print(f"the result_filter: {result_filter} and type: {type(result_filter)}")
+print(list(result_filter))
