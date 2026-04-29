@@ -11,7 +11,7 @@ print("=====Working with lists======")
 
 # literal
 person = {"name": "Jastine", "age": 25}  # dict
-people = ("Norman", "Aziz", "Alex")  # tuple
+people = ("Norman", "Aziz", "Alex" "100")  # tuple
 groups = ["MIT", "FLEXY", "DEVEX", "MG"]  # list
 for team in groups:
     print(f"the team: {team}")
