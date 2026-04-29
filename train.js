@@ -1,3 +1,28 @@
+
+// TASK - F
+
+// ❓ Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib,
+// agar stringda bir hil harf qatnashgan bolsa true,
+// qatnashmasa false qaytarishi kerak.
+
+// ✅ Masalaning yechimi:
+function findDoublers(str) {
+    let counter = {};
+    for (let harf of str) {
+        if (counter[harf]) return true;
+        counter[harf] = 1;
+    }
+    return false;
+}
+
+console.log(findDoublers("hello"));
+console.log(findDoublers("world"));
+
+
+
+
+
+
 // TASK - E
 
 // ❓ Shunday function tuzing, u bitta string argumentni qabul qilib 
@@ -5,15 +30,15 @@
 
 
 // ✅ Masalaning yechimi:
-function getReverse(str) {
-    let result = "";
-    for (let i = str.length - 1; i >= 0; i--) {
-        result += str[i];
-    }
-    return result;
-}
+// function getReverse(str) {
+//     let result = "";
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         result += str[i];
+//     }
+//     return result;
+// }
 
-console.log(getReverse("NodeJS"));
+// console.log(getReverse("NodeJS"));
 
 // TASK - D
 
