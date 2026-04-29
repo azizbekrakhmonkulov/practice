@@ -12,13 +12,13 @@ print("===== Python packeges & Core Package =====")
 # Core Packages > https://docs.python.org/3/library
 
 
-# # Core package
-# t = turtle.Turtle()
-# t.shape("turtle")
-# t.speed(1)
-# t.circle(100)
+# Core package
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed(1)
+t.circle(100)
 
-# turtle.done()
+turtle.done()
 
 
 my_file = open("material/message.txt", "r")
@@ -45,3 +45,18 @@ with Image.open("material/zip.jpg") as img_obj:
     resize_img = img_obj.resize((200, 200))
     resize_img.show()
     resize_img.save("material/samle.png")
+
+
+print("===== Debugging =====")
+
+
+def get_summary(*args):
+    total_amount = 0
+    for a in args:
+        total_amount += a
+        return total_amount  # find the bug via debugging
+
+
+test = 100
+result = get_summary(1, 2, 4, 6)
+print("result:", result)
