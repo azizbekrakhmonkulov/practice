@@ -1,3 +1,31 @@
+// TASK - H
+
+// ❓ Shunday function tuzing, u integerlardan iborat arrayni 
+// argument sifatida qabul qilib, faqat positive 
+// qiymatlarni olib string holatda return qilsin
+
+// ✅ Masalaning yechimi: 
+function giveString(arr) {
+    let result = []
+
+    for (let x = 0; x < arr.length; x++) {
+        if (arr[x] > 0) {
+            result.push(String(arr[x]))
+        }
+    }
+
+    return result.toString()
+}
+
+console.log(giveString([1, -4, 7, -9, 2]))
+
+
+
+
+
+
+
+
 
 // TASK - F
 
@@ -5,18 +33,18 @@
 // agar stringda bir hil harf qatnashgan bolsa true,
 // qatnashmasa false qaytarishi kerak.
 
-// ✅ Masalaning yechimi:
-function findDoublers(str) {
-    let counter = {};
-    for (let harf of str) {
-        if (counter[harf]) return true;
-        counter[harf] = 1;
-    }
-    return false;
-}
+// // ✅ Masalaning yechimi:
+// function findDoublers(str) {
+//     let counter = {};
+//     for (let harf of str) {
+//         if (counter[harf]) return true;
+//         counter[harf] = 1;
+//     }
+//     return false;
+// }
 
-console.log(findDoublers("hello"));
-console.log(findDoublers("world"));
+// console.log(findDoublers("hello"));
+// console.log(findDoublers("world"));
 
 
 
