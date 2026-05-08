@@ -1,3 +1,43 @@
+// TASK - J
+
+
+
+
+// ❓ Shunday function yozing, u parametridagi array ichida eng
+// kop takrorlangan raqamni topib qaytarsin.
+// MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
+
+
+// ✅ Masalaning yechimi: 
+function majorityElement(arr) {
+    const count = {};
+
+
+    for (const num of arr) {
+        count[num] = (count[num] || 0) + 1;
+    }
+
+    let maxNum = arr[0];
+    let maxCount = 0;
+
+    for (const key in count) {
+        if (count[key] > maxCount) {
+            maxCount = count[key];
+            maxNum = Number(key);
+        }
+    }
+
+    return maxNum;
+}
+
+console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
+
+
+
+
+
+
+
 // TASK - H
 
 // ❓ Shunday function tuzing, u integerlardan iborat arrayni 
@@ -5,19 +45,19 @@
 // qiymatlarni olib string holatda return qilsin
 
 // ✅ Masalaning yechimi: 
-function giveString(arr) {
-    let result = []
+// function giveString(arr) {
+//     let result = []
 
-    for (let x = 0; x < arr.length; x++) {
-        if (arr[x] > 0) {
-            result.push(String(arr[x]))
-        }
-    }
+//     for (let x = 0; x < arr.length; x++) {
+//         if (arr[x] > 0) {
+//             result.push(String(arr[x]))
+//         }
+//     }
 
-    return result.toString()
-}
+//     return result.toString()
+// }
 
-console.log(giveString([1, -4, 7, -9, 2]))
+// console.log(giveString([1, -4, 7, -9, 2]))
 
 
 
