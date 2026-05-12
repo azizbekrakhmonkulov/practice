@@ -1,7 +1,27 @@
+// TASK - L
+
+// ❓ Shunday function yozing, u string qabul qilsin va 
+// string ichidagi hamma sozlarni chappasiga yozib va 
+// sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+
+// ✅ Masalaning yechimi: 
+function reverseSentence(string) {
+    let words = string.split(" ");
+    let result = [];
+
+    for (let word of words) {
+        let reversed = "";
+        for (let i = word.length - 1; i >= 0; i--) {
+            reversed += word[i];
+        }
+        result.push(reversed);
+    }
+
+    return result.join(" ");
+}
+
+console.log(reverseSentence("MIT bu Mashaqat"));
 // TASK - J
-
-
-
 
 // ❓ Shunday function yozing, u parametridagi array ichida eng
 // kop takrorlangan raqamni topib qaytarsin.
@@ -9,33 +29,28 @@
 
 
 // ✅ Masalaning yechimi: 
-function majorityElement(arr) {
-    const count = {};
+// function majorityElement(arr) {
+//     const count = {};
 
 
-    for (const num of arr) {
-        count[num] = (count[num] || 0) + 1;
-    }
+//     for (const num of arr) {
+//         count[num] = (count[num] || 0) + 1;
+//     }
 
-    let maxNum = arr[0];
-    let maxCount = 0;
+//     let maxNum = arr[0];
+//     let maxCount = 0;
 
-    for (const key in count) {
-        if (count[key] > maxCount) {
-            maxCount = count[key];
-            maxNum = Number(key);
-        }
-    }
+//     for (const key in count) {
+//         if (count[key] > maxCount) {
+//             maxCount = count[key];
+//             maxNum = Number(key);
+//         }
+//     }
 
-    return maxNum;
-}
+//     return maxNum;
+// }
 
-console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
-
-
-
-
-
+// console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
 
 
 // TASK - H
@@ -60,13 +75,6 @@ console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
 // console.log(giveString([1, -4, 7, -9, 2]))
 
 
-
-
-
-
-
-
-
 // TASK - F
 
 // ❓ Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib,
@@ -85,10 +93,6 @@ console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
 
 // console.log(findDoublers("hello"));
 // console.log(findDoublers("world"));
-
-
-
-
 
 
 // TASK - E
