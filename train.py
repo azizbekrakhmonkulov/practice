@@ -1,16 +1,30 @@
+# M - TASK
+
+# ❓ Shunday function yozing, u string qabul qilsin va string palindrom
+# yani togri oqilganda ham, orqasidan oqilganda ham bir hil oqiladigan soz
+# ekanligini aniqlab boolean qiymat qaytarsin.
+
+# ✅ Masalaning yechimi:
+def palindrom_check(s: str) -> bool:
+    return s == s[::-1]
+
+
+print(palindrom_check("level"))
+
+
 # K-TASK
 
 # ❓ Shunday function yozing, u string qabul qilsin
 # va string ichidagi eng uzun sozni qaytarsin.
 # MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
 
-# ✅ Masalaning yechimi:
-def find_longest(text):
-    words = text.split()
-    return max(words, key=len)
+# # ✅ Masalaning yechimi:
+# def find_longest(text):
+#     words = text.split()
+#     return max(words, key=len)
 
 
-print(find_longest("Python dasturlash tili"))
+# print(find_longest("Python dasturlash tili"))
 
 # I-TASK
 
