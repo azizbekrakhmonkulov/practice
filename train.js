@@ -1,3 +1,26 @@
+// TASK - N
+// ❓ Shunday function yozing, u raqamlardan tashkil topgan array qabul qilsin va 
+// array ichidagi har bir raqam uchun raqamni ozi va hamda osha 
+// raqamni kvadratidan tashkil topgan object hosil qilib, 
+// hosil bolgan objectlarni array ichida qaytarsin.
+
+
+// ✅ Masalaning yechimi: 
+function getSquareNumbers(arr) {
+    let result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        result.push({
+            number: arr[i],
+            square: arr[i] ** 2
+        });
+    }
+
+    return result;
+}
+
+console.log(getSquareNumbers([1, 2, 3]));
+
 // TASK - L
 
 // ❓ Shunday function yozing, u string qabul qilsin va 
@@ -5,22 +28,22 @@
 // sozlar ketma-ketligini buzmasdan stringni qaytarsin.
 
 // ✅ Masalaning yechimi: 
-function reverseSentence(string) {
-    let words = string.split(" ");
-    let result = [];
+// function reverseSentence(string) {
+//     let words = string.split(" ");
+//     let result = [];
 
-    for (let word of words) {
-        let reversed = "";
-        for (let i = word.length - 1; i >= 0; i--) {
-            reversed += word[i];
-        }
-        result.push(reversed);
-    }
+//     for (let word of words) {
+//         let reversed = "";
+//         for (let i = word.length - 1; i >= 0; i--) {
+//             reversed += word[i];
+//         }
+//         result.push(reversed);
+//     }
 
-    return result.join(" ");
-}
+//     return result.join(" ");
+// }
 
-console.log(reverseSentence("MIT bu Mashaqat"));
+//console.log(reverseSentence("MIT bu Mashaqat"));
 // TASK - J
 
 // ❓ Shunday function yozing, u parametridagi array ichida eng
