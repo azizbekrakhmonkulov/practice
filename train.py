@@ -1,3 +1,22 @@
+# O - TASK
+
+# ❓ Shunday function yozing, u har xil valuelardan iborat
+# array qabul qilsin va List ichidagi sonlar yigindisini
+# hisoblab chiqqan javobni qaytarsin.
+
+# ✅ Masalaning yechimi:
+
+def calculate_summary(arr):
+    total = 0
+    for item in arr:
+        if isinstance(item, (int, float)) and not isinstance(item, bool):
+            total += item
+    return total
+
+
+print(calculate_summary([10, "10", {"son": 10}, True, 35]))
+
+
 # M - TASK
 
 # ❓ Shunday function yozing, u string qabul qilsin va string palindrom
@@ -5,11 +24,11 @@
 # ekanligini aniqlab boolean qiymat qaytarsin.
 
 # ✅ Masalaning yechimi:
-def palindrom_check(s: str) -> bool:
-    return s == s[::-1]
+# def palindrom_check(s: str) -> bool:
+#     return s == s[::-1]
 
 
-print(palindrom_check("level"))
+# print(palindrom_check("level"))
 
 
 # K-TASK
